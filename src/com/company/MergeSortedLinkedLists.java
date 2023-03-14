@@ -1,6 +1,8 @@
 package com.company;
 
 /**
+ * <a href="https://leetcode.com/problems/merge-two-sorted-lists/description/">21. Merge Two Sorted Lists</a>
+ * Runtime: 0ms, beats: 100% (looks like an error); Memory: 42MB, beats: 39,34%
  * @author Mike Kostenko on 12/03/2023
  */
 public class MergeSortedLinkedLists {
@@ -45,9 +47,6 @@ public class MergeSortedLinkedLists {
         int val;
         ListNode next;
 
-        ListNode() {
-        }
-
         ListNode(int val) {
             this.val = val;
         }
@@ -63,4 +62,11 @@ public class MergeSortedLinkedLists {
         }
     }
 
+    public static void main(String[] args) {
+        Solution newSolution = new Solution();
+        ListNode listA = new ListNode(4, new ListNode(5));
+        ListNode listB = new ListNode(1, new ListNode(7));
+        ListNode result = newSolution.mergeTwoLists(listA, listB);
+        System.out.println(result);
+    }
 }
