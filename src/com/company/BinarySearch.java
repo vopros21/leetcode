@@ -2,7 +2,7 @@ package com.company;
 
 /**
  * <a href="https://leetcode.com/problems/binary-search/">Binary Search</a>
- * Runtime: ms, beats: %; Memory: MB, beats: %
+ * Runtime: 0ms, beats: 100%; Memory: 43.6MB, beats: 21.6%
  * @author Mike Kostenko on 16/04/2023
  */
 public class BinarySearch {
