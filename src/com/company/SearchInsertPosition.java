@@ -10,20 +10,24 @@ public class SearchInsertPosition {
     public int searchInsert(int[] nums, int target) {
         int left = 0;
         int right = nums.length - 1;
-        int middle = -1;
+        int middle = (left + right) / 2;
         while (left <= right){
             middle = (left + right) / 2;
             if (nums[middle] < target){
                 left = middle + 1;
-            } else {
+            } else if (nums[middle] > target){
                 right = middle - 1;
+            } else {
+                return middle;
             }
         }
-        return middle;
+        if (right == 0)
+            return 0;
+        return middle + 1;
         }
 
         public static void main(String[] args) {
-            int[] numbers = {1, 3, 5, 6};
-            System.out.println(new SearchInsertPosition().searchInsert(numbers, 7));
+            int[] numbers = {1, 3};
+            System.out.println(new SearchInsertPosition().searchInsert(numbers, 2));
         }
 }
