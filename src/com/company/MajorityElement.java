@@ -4,13 +4,14 @@ import java.util.HashMap;
 
 /**
  * <a href="https://leetcode.com/problems/majority-element/">Majority Element</a>
- *  * Runtime: ms, beats: %; Memory: MB, beats: %
+ * * Runtime: 15ms, beats: 22.91%; Memory: 47.3MB, beats: 33.85%
+ *
  * @author Mike Kostenko on 21/04/2023
  */
 public class MajorityElement {
     public int majorityElement(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
-        for (int i: nums) {
+        for (int i : nums) {
             if (map.containsKey(i)) {
                 map.put(i, map.get(i) + 1);
             } else {
@@ -21,7 +22,7 @@ public class MajorityElement {
     }
 
     public static void main(String[] args) {
-        int[] numbers = {2,2,1,1,1,2,2};
+        int[] numbers = {2, 2, 1, 1, 1, 2, 2};
         System.out.println(new MajorityElement().majorityElement(numbers));
     }
 }
