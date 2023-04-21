@@ -3,17 +3,18 @@ package com.company;
 /**
  * <a href="https://leetcode.com/problems/binary-search/">Binary Search</a>
  * Runtime: 0ms, beats: 100%; Memory: 43.6MB, beats: 21.6%
+ *
  * @author Mike Kostenko on 16/04/2023
  */
 public class BinarySearch {
     public int search(int[] nums, int target) {
         int left = 0;
         int right = nums.length - 1;
-        while (left <= right){
+        while (left <= right) {
             int middle = (left + right) / 2;
-            if (nums[middle] < target){
+            if (nums[middle] < target) {
                 left = middle + 1;
-            } else if (nums[middle] > target){
+            } else if (nums[middle] > target) {
                 right = middle - 1;
             } else {
                 return middle;
