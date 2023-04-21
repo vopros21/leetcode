@@ -3,6 +3,7 @@ package com.company;
 /**
  * <a href="https://leetcode.com/problems/add-binary/">Add Binary</a>
  * Runtime: ms, beats: %; Memory: MB, beats: %
+ *
  * @author Mike Kostenko on 13/03/2023
  */
 public class AddBinary {
@@ -13,12 +14,12 @@ public class AddBinary {
         String shortWord;
         String longWord;
         char c = '0';
-        if (a.length() > b.length()){
+        if (a.length() > b.length()) {
             shortWord = b;
             longWord = a;
         } else {
-            shortWord =  a;
-            longWord  = b;
+            shortWord = a;
+            longWord = b;
         }
         int lenShort = shortWord.length();
         int lenLong = longWord.length();
@@ -26,7 +27,7 @@ public class AddBinary {
             char curLong = longWord.charAt(lenLong - i - 1);
             char curShort = i >= lenShort ? '0' : shortWord.charAt(lenShort - i - 1);
             char temp = curShort == curLong ? '0' : '1';
-            result.insert(0, c ==  temp ? '0' : '1');
+            result.insert(0, c == temp ? '0' : '1');
             c = (curLong == '1' && temp == '0') ? '1' : '0';
         }
         if (c == '1') {
