@@ -1,4 +1,4 @@
-package com.company;
+package com.company.medium;
 
 /**
  * <a href="https://leetcode.com/problems/out-of-boundary-paths/">576. Out of Boundary Paths</a>

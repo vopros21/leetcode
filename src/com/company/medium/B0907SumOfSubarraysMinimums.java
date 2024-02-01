@@ -1,4 +1,4 @@
-package com.company;
+package com.company.medium;
 
 import java.util.Stack;
 

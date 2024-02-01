@@ -1,4 +1,4 @@
-package com.company;
+package com.company.easy;
 
 /**
  * <a href="https://leetcode.com/problems/contains-duplicate-ii/">219. Contains Duplicate II</a>

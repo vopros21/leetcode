@@ -1,4 +1,4 @@
-package com.company;
+package com.company.medium;
 
 /**
  *  * <a href="https://leetcode.com/problems/minimum-falling-path-sum/">931. Minimum Falling Path Sum</a>
