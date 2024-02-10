@@ -2,7 +2,7 @@ package com.company.medium;
 
 /**
  <a href="https://leetcode.com/problems/palindromic-substrings/">647. Palindromic Substrings</a>
- * Runtime: ms, beats: %; Memory: MB, beats: %
+ * Runtime: 2ms, beats: 96.29%; Memory: 41.6MB, beats: 47.14%
  *
  * @author Mike Kostenko on 10/02/2024
  */
