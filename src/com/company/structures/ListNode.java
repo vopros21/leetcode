@@ -15,4 +15,17 @@ public class ListNode {
     public String toString() {
         return "{value: " + val + ", hasNext: " + (next != null) + "}";
     }
+
+    public String printStructure() {
+        StringBuilder sb = new StringBuilder();
+        ListNode tmp = this;
+        while (tmp != null) {
+            sb.append(tmp);
+            if (tmp.next != null) {
+                sb.append(" -> ");
+            }
+            tmp = tmp.next;
+        }
+        return sb.toString();
+    }
 }
