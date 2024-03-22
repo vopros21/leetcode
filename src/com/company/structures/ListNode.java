@@ -1,9 +1,12 @@
 package com.company.structures;
 
+import lombok.Getter;
+
 /**
  * @author Mike Kostenko on 30/01/2024
  */
 public class ListNode {
+    @Getter
     int val;
     public ListNode next;
     @SuppressWarnings("unused")
