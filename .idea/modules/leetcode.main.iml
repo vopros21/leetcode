@@ -3,9 +3,30 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../build/classes/java/main" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../src/main" />
+    <content url="file://$MODULE_DIR$/../../build/generated/sources/annotationProcessor/java/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../build/generated/sources/annotationProcessor/java/main" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.18.36" level="project" />
+    <orderEntry type="module-library">
+      <library name="JUnit5.8.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../lib/junit-jupiter-5.12.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/junit-jupiter-api-5.12.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/opentest4j-1.3.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/junit-platform-commons-1.12.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/apiguardian-api-1.1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/junit-jupiter-params-5.12.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/junit-jupiter-engine-5.12.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/junit-platform-engine-1.12.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
