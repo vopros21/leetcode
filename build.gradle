@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.36' // For compile-time only
+    annotationProcessor 'org.projectlombok:lombok:1.18.36' // For annotation processing
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.36' // Optional: For test sources
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.36' // Optional: For test annotation processing
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.12.0'
+}
+
+test {
+    useJUnitPlatform()
+}
